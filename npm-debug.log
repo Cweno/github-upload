@@ -1,0 +1,110 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'yo',
+1 verbose cli   'generator-hubot' ]
+2 info using npm@3.10.10
+3 info using node@v6.14.3
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData yo
+8 silly fetchPackageMetaData generator-hubot
+9 silly fetchNamedPackageData yo
+10 silly mapToRegistry name yo
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry data Result {
+13 silly mapToRegistry   raw: 'yo',
+13 silly mapToRegistry   scope: null,
+13 silly mapToRegistry   escapedName: 'yo',
+13 silly mapToRegistry   name: 'yo',
+13 silly mapToRegistry   rawSpec: '',
+13 silly mapToRegistry   spec: 'latest',
+13 silly mapToRegistry   type: 'tag' }
+14 silly mapToRegistry uri https://registry.npmjs.org/yo
+15 silly fetchNamedPackageData generator-hubot
+16 silly mapToRegistry name generator-hubot
+17 silly mapToRegistry using default registry
+18 silly mapToRegistry registry https://registry.npmjs.org/
+19 silly mapToRegistry data Result {
+19 silly mapToRegistry   raw: 'generator-hubot',
+19 silly mapToRegistry   scope: null,
+19 silly mapToRegistry   escapedName: 'generator-hubot',
+19 silly mapToRegistry   name: 'generator-hubot',
+19 silly mapToRegistry   rawSpec: '',
+19 silly mapToRegistry   spec: 'latest',
+19 silly mapToRegistry   type: 'tag' }
+20 silly mapToRegistry uri https://registry.npmjs.org/generator-hubot
+21 verbose request uri https://registry.npmjs.org/yo
+22 verbose request no auth needed
+23 info attempt registry request try #1 at 5:17:41 PM
+24 verbose request id 2a148a2e2b161b74
+25 http request GET https://registry.npmjs.org/yo
+26 verbose request uri https://registry.npmjs.org/generator-hubot
+27 verbose request no auth needed
+28 info attempt registry request try #1 at 5:17:41 PM
+29 http request GET https://registry.npmjs.org/generator-hubot
+30 info retry will retry, error on last attempt: Error: certificate has expired
+31 info retry will retry, error on last attempt: Error: certificate has expired
+32 info attempt registry request try #2 at 5:17:52 PM
+33 http request GET https://registry.npmjs.org/yo
+34 info attempt registry request try #2 at 5:17:52 PM
+35 http request GET https://registry.npmjs.org/generator-hubot
+36 info retry will retry, error on last attempt: Error: certificate has expired
+37 info retry will retry, error on last attempt: Error: certificate has expired
+38 info attempt registry request try #3 at 5:18:52 PM
+39 http request GET https://registry.npmjs.org/generator-hubot
+40 info attempt registry request try #3 at 5:18:52 PM
+41 http request GET https://registry.npmjs.org/yo
+42 silly fetchPackageMetaData Error: certificate has expired
+42 silly fetchPackageMetaData     at Error (native)
+42 silly fetchPackageMetaData     at TLSSocket.<anonymous> (_tls_wrap.js:1092:38)
+42 silly fetchPackageMetaData     at emitNone (events.js:86:13)
+42 silly fetchPackageMetaData     at TLSSocket.emit (events.js:185:7)
+42 silly fetchPackageMetaData     at TLSSocket._finishInit (_tls_wrap.js:609:8)
+42 silly fetchPackageMetaData     at TLSWrap.ssl.onhandshakedone (_tls_wrap.js:439:38)
+42 silly fetchPackageMetaData  error for generator-hubot { Error: certificate has expired
+42 silly fetchPackageMetaData     at Error (native)
+42 silly fetchPackageMetaData     at TLSSocket.<anonymous> (_tls_wrap.js:1092:38)
+42 silly fetchPackageMetaData     at emitNone (events.js:86:13)
+42 silly fetchPackageMetaData     at TLSSocket.emit (events.js:185:7)
+42 silly fetchPackageMetaData     at TLSSocket._finishInit (_tls_wrap.js:609:8)
+42 silly fetchPackageMetaData     at TLSWrap.ssl.onhandshakedone (_tls_wrap.js:439:38) code: 'CERT_HAS_EXPIRED' }
+43 silly fetchPackageMetaData Error: certificate has expired
+43 silly fetchPackageMetaData     at Error (native)
+43 silly fetchPackageMetaData     at TLSSocket.<anonymous> (_tls_wrap.js:1092:38)
+43 silly fetchPackageMetaData     at emitNone (events.js:86:13)
+43 silly fetchPackageMetaData     at TLSSocket.emit (events.js:185:7)
+43 silly fetchPackageMetaData     at TLSSocket._finishInit (_tls_wrap.js:609:8)
+43 silly fetchPackageMetaData     at TLSWrap.ssl.onhandshakedone (_tls_wrap.js:439:38)
+43 silly fetchPackageMetaData  error for yo { Error: certificate has expired
+43 silly fetchPackageMetaData     at Error (native)
+43 silly fetchPackageMetaData     at TLSSocket.<anonymous> (_tls_wrap.js:1092:38)
+43 silly fetchPackageMetaData     at emitNone (events.js:86:13)
+43 silly fetchPackageMetaData     at TLSSocket.emit (events.js:185:7)
+43 silly fetchPackageMetaData     at TLSSocket._finishInit (_tls_wrap.js:609:8)
+43 silly fetchPackageMetaData     at TLSWrap.ssl.onhandshakedone (_tls_wrap.js:439:38) code: 'CERT_HAS_EXPIRED' }
+44 silly rollbackFailedOptional Starting
+45 silly rollbackFailedOptional Finishing
+46 silly runTopLevelLifecycles Finishing
+47 silly install printInstalled
+48 verbose stack Error: certificate has expired
+48 verbose stack     at Error (native)
+48 verbose stack     at TLSSocket.<anonymous> (_tls_wrap.js:1092:38)
+48 verbose stack     at emitNone (events.js:86:13)
+48 verbose stack     at TLSSocket.emit (events.js:185:7)
+48 verbose stack     at TLSSocket._finishInit (_tls_wrap.js:609:8)
+48 verbose stack     at TLSWrap.ssl.onhandshakedone (_tls_wrap.js:439:38)
+49 verbose cwd /home/cbueno
+50 error Linux 3.10.0-957.1.3.el7.x86_64
+51 error argv "/usr/bin/node" "/usr/bin/npm" "install" "-g" "yo" "generator-hubot"
+52 error node v6.14.3
+53 error npm  v3.10.10
+54 error code CERT_HAS_EXPIRED
+55 error certificate has expired
+56 error If you need help, you may report this error at:
+56 error     <https://github.com/npm/npm/issues>
+57 verbose exit [ 1, true ]

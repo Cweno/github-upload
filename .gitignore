@@ -1,0 +1,6 @@
+node_modules
+.DS_Store*
+.hubot_history
+webot
+Python-3.6.3.tar.xz
+node-v10.15.0-linux-x64.tar.gz
